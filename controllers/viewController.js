@@ -8,7 +8,7 @@ const viewController = {
     res.render('articles/New')
   },
   edit (req, res, next) {
-    res.render('articles/Edit', res.locals.edit)
+    res.render('articles/Edit', res.locals.data)
   },
   show (req, res, next) {
     res.render('articles/Show', res.locals.data)

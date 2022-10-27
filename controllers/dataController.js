@@ -21,7 +21,7 @@ const dataController = {
           msg: err.message
         })
       } else {
-        res.locals.data.fruit = deletedArticle
+        res.locals.data.article = deletedArticle
         next()
       }
     })
