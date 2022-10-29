@@ -19,12 +19,12 @@ class Default extends React.Component {
           <img src="https://i.imgur.com/a818LR1.png"></img>
           <img src="https://i.imgur.com/E2kQrr2.png"></img>
           <img src="https://i.imgur.com/edjCjX3.png"></img>
-
+          <div className='indexTitle'>TRAVEL BLOG</div>
           </div>
           <nav>
             <a href='/articles'>HOME PAGE</a>
             <a href='/articles/new'>NEW POST</a>
-            {article ? <a href={`/articles/${article._id}/edit`}> EDIT POST</a> : ' '} {article ? <a href={`/articles/${article._id}`}> {article.title} Show Page</a> : ' '}
+            {article ? <a href={`/articles/${article._id}/edit`}> EDIT POST</a> : ' '} {article ? <a href={`/articles/${article._id}`}> {article.title} SHOW PAGE</a> : ' '}
           </nav>
           <h1>
             {title}
