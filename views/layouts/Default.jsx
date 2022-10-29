@@ -31,6 +31,12 @@ class Default extends React.Component {
           </h1>
           {this.props.children}
         </body>
+
+        <div class="footer">
+        <nav>
+          <h3>TRAVEL BLOG</h3>
+            </nav>
+</div>
       </html>
     )
   }

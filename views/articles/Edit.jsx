@@ -9,12 +9,16 @@ class Edit extends React.Component {
     return (
       <Default title={`${capName} `} article={this.props.article}>
         <h2>EDIT PAGE</h2>
+        <div className='showBox'>
+          <div className='showCont'>
         <form method='POST' action={`/articles/${_id}?_method=PUT`}>
           Title: <input type='text' name='title' defaultValue={title} /><br />
           Post: <input type='text' name='post' defaultValue={post} /><br />
           Image: <input type='text' name='image' defaultValue={image} /><br />
           <input type='submit' value='Edit Post' />
         </form>
+        </div>
+        </div>
       </Default>
     )
   }
