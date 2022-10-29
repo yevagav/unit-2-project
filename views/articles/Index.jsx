@@ -6,30 +6,32 @@ class Index extends React.Component {
     const { articles } = this.props
     return (
       <Default>
-        <div className='container'>
-        <ul>
-          {
+        <div className='outer-container'>
+          <div className='container'>
+
+            {
             articles.map((article) => {
-              const { title, post, image, _id } = article
+              const { title, image, _id } = article
               return (
-                <div className='flexItems'>
-                <li className="li" key={_id}>
-                  <a className="a" href={`/articles/${_id}`}>
+                <div className='grid-items' key={_id}>
+
+                  <a className='a' href={`/articles/${_id}`}>
                     {title}
-                  </a> 
+                  </a>
                   <br />
                   {image ? <img src={image} /> : ' '}
                   <form method='POST' action={`/articles/${_id}?_method=DELETE`}>
-                    <input className='delete' type='submit' value={`Delete Post`} />
+                    <input className='delete' type='submit' value='Delete Post' />
 
                   </form>
-                </li>
+
                 </div>
-                
+
               )
             })
           }
-        </ul>
+
+          </div>
         </div>
       </Default>
     )

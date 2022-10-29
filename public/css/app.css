@@ -2,9 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 body {
     margin: 0;
-  
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    
+}
+
+
+.header > img {
+   width: 100%;
+   height: 100%;
+    
+}
+
+.indexTitle {
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    /* top: 3.5%;
+    left: 38%; */
+   
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    
+    
 }
 
 nav {
@@ -17,31 +48,18 @@ nav {
     font-size: 1em;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    height: 150px;
-    
-    
-  
-    
-}
-
-.header > img {
-   width: 100%;
-   height: 100%;
-    
-}
-
-a{
-    color: black;
+nav > a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 
 }
 
-ul{
-    list-style: none;
+nav > a:hover {
+    text-decoration: line-through;
 }
+
+
 
 h1 {
     text-align: center;
@@ -62,53 +80,65 @@ h3{
     font-family: 'Bebas Neue', cursive;
 }
 
-nav > a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
     color: white;
+    text-align: center;
+  }
 
-}
-
-nav > a:hover {
-    text-decoration: line-through;
-}
 
 /* Index Page Collections */
-.indexTitle {
-    position: absolute;
-    color: white;
-    font-size: 5em;
-    top: 3.5%;
-    left: 38%;
-    font-weight: bold;
-    font-family: 'Bebas Neue', cursive;
-    
-    
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
 
-ul{
-    list-style: none;
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 50px;
+    width: 100%;
+
+    /* list-style: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 
 }
 
-.li{
+.grid-items {
     text-align: center;
     border: solid;
+    border-radius: 2em;
     border-color: white;
-    width: max-content;
-    padding: 7em;
+    /* width: 33.33%; */
+    padding: 4em;
     background-color: black;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 
 }
 
-.li:hover{
+
+@media only screen and (max-width: 600px) {
+    .container {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+
+.grid-items:hover{
     background-color: rgb(219, 214, 199);
 }
 
@@ -132,7 +162,7 @@ ul{
 }
 
 
-/* NEW PPOST PAGE */
+/* NEW POST PAGE */
 .newCont {
     display: flex;
     flex-direction: column;
@@ -148,28 +178,15 @@ ul{
     justify-content: center;
   }
 
-  .newInput{
-    height: 50px;
-  }
 
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
 
-  /* Show Page */
-  .showBox{
+  /* Edit Post */
+  .editBox{
     display: flex;
     justify-content: center;
   }
 
-  .showCont{
+  .editCont{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,4 +194,9 @@ ul{
     color: white;
     padding: 10%;
     width: 2em;
+  }
+
+  /* Show Page */
+  span {
+    background-color: black;
   }

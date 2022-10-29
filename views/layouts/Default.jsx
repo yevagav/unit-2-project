@@ -11,15 +11,15 @@ class Default extends React.Component {
         </head>
         <body>
           <div className='header'>
-          <img src="https://i.imgur.com/cEukfyg.png"></img>
-          <img src="https://i.imgur.com/DI0c5aO.png"></img>
-          <img src="https://i.imgur.com/6aiVqGM.png"></img>
-          <img src="https://i.imgur.com/bJbAxZy.png"></img>
-          <img src="https://i.imgur.com/C6x5xd4.png"></img>
-          <img src="https://i.imgur.com/a818LR1.png"></img>
-          <img src="https://i.imgur.com/E2kQrr2.png"></img>
-          <img src="https://i.imgur.com/edjCjX3.png"></img>
-          <div className='indexTitle'>TRAVEL BLOG</div>
+            <img src='https://i.imgur.com/cEukfyg.png' />
+            <img src='https://i.imgur.com/DI0c5aO.png' />
+            <img src='https://i.imgur.com/6aiVqGM.png' />
+            <img src='https://i.imgur.com/bJbAxZy.png' />
+            <img src='https://i.imgur.com/C6x5xd4.png' />
+            <img src='https://i.imgur.com/a818LR1.png' />
+            <img src='https://i.imgur.com/E2kQrr2.png' />
+            <img src='https://i.imgur.com/edjCjX3.png' />
+            <div className='indexTitle'>TRAVEL BLOG</div>
           </div>
           <nav>
             <a href='/articles'>HOME PAGE</a>
@@ -32,11 +32,11 @@ class Default extends React.Component {
           {this.props.children}
         </body>
 
-        <div class="footer">
-        <nav>
-          <h3>TRAVEL BLOG</h3>
-            </nav>
-</div>
+        <div class='footer'>
+          <nav>
+            <h3>TRAVEL BLOG</h3>
+          </nav>
+        </div>
       </html>
     )
   }
