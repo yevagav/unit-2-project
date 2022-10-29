@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
     margin: 0;
-  font-family: 'Poppins', sans-serif;
+  
 }
 
 nav {
@@ -11,10 +13,8 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     height: 4em;
-    background-color: rgb(219, 214, 199);
+    background-color: black;
     font-size: 1em;
-    color: white;
-   
 }
 
 .header {
@@ -46,7 +46,8 @@ ul{
 h1 {
     text-align: center;
     font-size: 3em;
-   
+    font-family: 'Poppins', sans-serif;
+
 
 }
 
@@ -59,6 +60,8 @@ h2{
 
 nav > a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 
 }
 
@@ -70,8 +73,77 @@ nav > a:hover {
 .indexTitle {
     position: absolute;
     color: white;
-    font-size: 4em;
-    top: 4%;
-    left: 35%;
+    font-size: 5em;
+    top: 3.5%;
+    left: 38%;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    
     
 }
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.li{
+    text-align: center;
+    border: solid;
+    border-color: white;
+    width: max-content;
+    padding: 7em;
+    background-color: black;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+.li:hover{
+    background-color: rgb(219, 214, 199);
+}
+
+.a{
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+}
+.a:hover{
+    color: black;
+}
+
+
+.delete{
+    background-color: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 7%;
+}
+
+
+/* NEW PPOST PAGE */
+.newCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10%;
+    width: 2em;
+  }
+
+  .newBox{
+    display: flex;
+    justify-content: center;
+  }
+
+  .newInput{
+    height: 50px;
+  }
