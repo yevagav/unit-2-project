@@ -32,7 +32,7 @@ class Default extends React.Component {
           {this.props.children}
         </body>
 
-        <div class='footer'>
+        <div className='footer'>
           <nav>
             <h3>TRAVEL BLOG</h3>
           </nav>

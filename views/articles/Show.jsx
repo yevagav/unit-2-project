@@ -3,12 +3,15 @@ const Default = require('../layouts/Default.jsx')
 
 class Show extends React.Component {
   render () {
-    const { title, post, image } = this.props.article
+    const { title, post, image, timestamps } = this.props.article
     const capName = title.toUpperCase()
     return (
       <Default title={`${capName}`} article={this.props.article}>
-        <h2>{`TRAVELS TO ${capName}`}</h2>
-        <p>{title} {post} {image} </p>
+        <h2>{`Created: ${timestamps}`}</h2>
+        <div className='show-img'>
+          {image ? <img src={image} /> : ' '}
+        </div>
+        <p className='show-p'>{post}</p>
       </Default>
     )
   }

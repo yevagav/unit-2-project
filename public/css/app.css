@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
+/* Default Page in Layouts */
 body {
     margin: 0;
     
@@ -24,6 +24,12 @@ body {
    height: 100%;
     
 }
+
+@media only screen and (max-width: 1200px) {
+    .header > img {
+      display: none;
+    }
+  }
 
 .indexTitle {
     position: absolute;
@@ -94,7 +100,7 @@ h3{
   }
 
 
-/* Index Page Collections */
+/* Index Page */
 .outer-container {
     display: flex;
     flex-direction: column;
@@ -163,20 +169,23 @@ h3{
 
 
 /* NEW POST PAGE */
+
+.newBox{
+    display: flex;
+    justify-content: center;
+  }
+
+
 .newCont {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color: white;
-    padding: 10%;
-    width: 2em;
+    padding: 8%;
+    width: 20%;
   }
 
-  .newBox{
-    display: flex;
-    justify-content: center;
-  }
 
 
 
@@ -197,6 +206,20 @@ h3{
   }
 
   /* Show Page */
-  span {
-    background-color: black;
-  }
+ .show-img {
+    display: flex;
+    background-color: aqua;
+ }
+
+ .show-img > img {
+    width: 100%;
+    height: 100%;
+
+ }
+
+ .show-p{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+ }

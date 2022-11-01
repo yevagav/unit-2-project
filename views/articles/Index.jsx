@@ -11,7 +11,7 @@ class Index extends React.Component {
 
             {
             articles.map((article) => {
-              const { title, image, _id } = article
+              const { title, _id } = article
               return (
                 <div className='grid-items' key={_id}>
 
@@ -19,7 +19,7 @@ class Index extends React.Component {
                     {title}
                   </a>
                   <br />
-                  {image ? <img src={image} /> : ' '}
+                  {/* {image ? <img src={image} /> : ' '} */}
                   <form method='POST' action={`/articles/${_id}?_method=DELETE`}>
                     <input className='delete' type='submit' value='Delete Post' />
 
