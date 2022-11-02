@@ -5,6 +5,15 @@ const router = express.Router()
 const dataController = require('./dataController')
 const viewController = require('./viewController')
 
+//Auth Middleware
+router.use((req, res, next) => {
+    if (req.session.loggedIn) {
+      next()
+    } else {
+      res.redirect("/user/login")
+    }
+  })
+
 // Routes
 // Index
 router.get('/', dataController.index, viewController.index)

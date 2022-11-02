@@ -2,9 +2,12 @@ require('dotenv').config()
 // Require Models
 const express = require('express')
 const methodOverride = require('method-override')
+const cors = require('cors')
+const session = require('express-session')
+const MongoStore = require('connect-mongo')
 const app = express()
 const PORT = process.env.PORT || 3000
-const cors = require('cors')
+
 
 // connect to database
 const db = require('./models/db')
@@ -19,12 +22,20 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('jsx-view-engine').createEngine())
 
 // Mount Express Middleware
+app.use(express.urlencoded({ extended: true }))
 app.use((req, res, next) => {
   res.locals.data = {}
   next()
 })
 
-app.use(express.urlencoded({ extended: true }))
+app.use(
+  session({
+    secret: process.env.SECRET,
+    store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
+    saveUninitialized: true,
+    resave: false
+  })
+)
 
 /* End Config */
 
@@ -36,6 +47,7 @@ app.use(express.static('public'))
 
 // setting up localhost:3000/ as the entry for my routes
 app.use('/articles', require('./controllers/routeController'))
+app.use('/user', require('./controllers/authController'))
 
 /* End Middleware */
 

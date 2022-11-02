@@ -6,7 +6,7 @@
 ![](images/new-page.png)
 
 # Technologies Used
-Node.js, JSX, Express, Mongo.DB
+Node.js, JSX, Express, Mongo.DB, mongoose
 # Getting Started
 link to app:
 
