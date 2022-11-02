@@ -3,5 +3,8 @@
 # Design
 
 # Technologies Used
-
+Node.js, JSX, Express, Mongo.DB
 # Getting Started
+link to app:
+
+# Next Steps
