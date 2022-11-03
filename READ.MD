@@ -1,5 +1,12 @@
 # Project 2: Travel Blog
- A blog that is created for a user to be able to upload posts about past travels. The user is able to create new posts, edit posts, and delete posts. 
+ A CRUD app that is created for a user to be able to upload posts about past travels.
+
+ # Technologies Used
+JavaScript, HTML, CSS, Node.js, JSX, Express, Mongo.DB, mongoose
+
+# Getting Started
+link to app:
+
 # Design
 ![](images/screenshot-home.png)
 ![](images/screenshot-showPage.png)
@@ -16,11 +23,12 @@ Edit | /articles/:id/edit | GET | Edit.jsx | Article.findOne or Article.findById
 Update | /articles/:id | PUT | none | Article.findByIdAndUpdate or Article.findOneAndUpdate | 
 Destroy | /articles/:id | DELETE | none | Article.findByIdAndRemove or Article.findByIdAndDelete | 
 
+# ERD:
+![](images/erd.jpg)
+# Wireframes
 
-
-# Technologies Used
-Node.js, JSX, Express, Mongo.DB, mongoose
-# Getting Started
-link to app:
 
 # Next Steps
+### Future Improvements
+
+
