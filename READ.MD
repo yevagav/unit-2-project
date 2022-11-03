@@ -12,7 +12,7 @@ link to app:
 
 # Design
 ![](images/screenshot-home.png)
-![](images/screenshot-showPage.png)
+![](images/show-page-app.png)
 ![](images/new-page.png)
 
 # Restful Routes:
