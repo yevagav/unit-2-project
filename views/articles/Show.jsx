@@ -3,11 +3,11 @@ const Default = require('../layouts/Default.jsx')
 
 class Show extends React.Component {
   render () {
-    const { title, post, image, timestamps } = this.props.article
+    const { title, post, image, updatedAt } = this.props.article
     const capName = title.toUpperCase()
     return (
       <Default title={`${capName}`} article={this.props.article}>
-        <h2>{`Created: ${timestamps}`}</h2>
+        <h2>{`Created: ${updatedAt.toLocaleDateString()}`}</h2>
         <div className='show-img'>
           {image ? <img src={image} /> : ' '}
         </div>
