@@ -26,9 +26,13 @@ Destroy | /articles/:id | DELETE | none | Article.findByIdAndRemove or Article.f
 # ERD:
 ![](images/erd.jpg)
 # Wireframes
+Index Page:
 ![](images/home-page-wire.png)
+New Page:
 ![](images/new-blog-wire.png)
+Edit Page:
 ![](images/edit-page-wire.png)
+Show Page:
 ![](images/show-page-wire.png)
 
 # Next Steps
