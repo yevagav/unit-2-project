@@ -7,6 +7,9 @@ JavaScript, HTML, CSS, Node.js, JSX, Express, Mongo.DB, mongoose
 # Getting Started
 link to app:
 
+# Resources 
+<a href="https://trello.com/b/ZksmOoMR/unit-2-project" target="_blank">Trello</a>
+
 # Design
 ![](images/screenshot-home.png)
 ![](images/screenshot-showPage.png)
