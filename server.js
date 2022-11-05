@@ -49,6 +49,10 @@ app.use(express.static('public'))
 app.use('/articles', require('./controllers/routeController'))
 app.use('/user', require('./controllers/authController'))
 
+app.get('/', (req, res) => {
+  res.render('Home.jsx')
+})
+
 /* End Middleware */
 
 // Tell the app to listen to a port

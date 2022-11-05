@@ -7,10 +7,10 @@ class New extends React.Component {
       <Default title='NEW BLOG POST'>
 
         <form method='POST' action='/articles'>
-          <div className='newBox'>
-            <div className='newCont'>
+          <div className='new-box'>
+            <div className='new-cont'>
               Title: <input type='text' name='title' placeholder='Title Of Blog Post' /><br />
-              Post: <input className='newInput' type='text' name='post' placeholder='Type Your Post Here' /><br />
+              Post: <input className='new-input' type='text' name='post' placeholder='Type Your Post Here' /><br />
               Image: <input type='text' name='image' placeholder='URL of your image' /><br />
               <input type='submit' value='Submit Post' />
             </div>

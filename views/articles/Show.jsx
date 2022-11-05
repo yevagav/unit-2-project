@@ -7,7 +7,7 @@ class Show extends React.Component {
     const capName = title.toUpperCase()
     return (
       <Default title={`${capName}`} article={this.props.article}>
-        <h2>{`Created: ${updatedAt.toLocaleDateString()}`}</h2>
+        <h2 id="created">{`Created: ${updatedAt.toLocaleDateString()}`}</h2>
         <div className='show-img'>
           {image ? <img src={image} /> : ' '}
         </div>

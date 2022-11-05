@@ -12,7 +12,9 @@ const router = express.Router()
 
 
 // Routes
-
+router.get('/home', (req, res)=> {
+  res.render('Home.jsx')
+})
 
 // The SignUp Routes (Get => form, post => submit form)
 router.get('/signup', (req, res) => {

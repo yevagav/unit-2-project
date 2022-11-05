@@ -8,8 +8,8 @@ class Edit extends React.Component {
     const capName = title.toUpperCase()
     return (
       <Default title={`${capName} `} article={this.props.article}>
-        <div className='editBox'>
-          <div className='editCont'>
+        <div className='edit-box'>
+          <div className='edit-cont'>
             <form method='POST' action={`/articles/${_id}?_method=PUT`}>
               Title: <input type='text' name='title' defaultValue={title} /><br />
               Post: <input type='text' name='post' defaultValue={post} /><br />
