@@ -23,10 +23,10 @@ class Default extends React.Component {
           </div> 
 
           <nav>
-            <a href='/articles'>HOME PAGE</a>
-            <a href='/articles/new'>NEW POST</a>
-            {article ? <a href={`/articles/${article._id}/edit`}> EDIT POST</a> : ' '} {article ? <a href={`/articles/${article._id}`}> {article.title} SHOW PAGE</a> : ' '}
-            {title === 'Login to Fruits Account' || title === 'Sign Up For Fruits' ? '' : <a href="/user/logout"><button>Logout</button></a>}
+            <a className="nav-a" href='/articles'>HOME PAGE</a>
+            <a className="nav-a" href='/articles/new'>NEW POST</a>
+            {article ? <a className="nav-a" href={`/articles/${article._id}/edit`}> EDIT POST</a> : ' '} {article ? <a className="nav-a" href={`/articles/${article._id}`}> {article.title} SHOW PAGE</a> : ' '}
+            {title === 'Login' || title === 'Sign Up' ? '' : <a href="/user/logout"><h1 className="logout">LOGOUT</h1></a>}
           </nav>
           <h1>
             {title}

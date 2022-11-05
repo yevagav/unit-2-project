@@ -23,7 +23,7 @@ class LogInDefault extends React.Component {
           </div> 
 
           <nav>
-           nav bar
+           nav
           </nav>
           <h1>
             {title}
