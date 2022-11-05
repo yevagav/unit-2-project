@@ -40,6 +40,7 @@ Show Page:
 
 # Next Steps
 ### Future Improvements
-- Add in comments that logged in users can add
+- Create comment setion that other users can leave
 - Links that redirect to booking sites
+- Styling improvemnts for login/signup and show route
 
