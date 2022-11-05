@@ -4,17 +4,31 @@ const router = express.Router()
 
 const dataController = require('./dataController')
 const viewController = require('./viewController')
+const apiController = require('./apiController')
 
-//Auth Middleware
+// Auth Middleware
 router.use((req, res, next) => {
-    if (req.session.loggedIn) {
-      next()
-    } else {
-      res.redirect("/user/home")
-    }
-  })
+  if (req.session.loggedIn) {
+    next()
+  } else {
+    res.redirect('/user/home')
+  }
+})
 
 // Routes
+
+// api route
+// Index
+router.get('/api', dataController.index, apiController.index)
+// Delete
+router.delete('/api/:id', dataController.destroy, apiController.show)
+// Update
+router.put('/api/:id', dataController.update, apiController.show)
+// Create
+router.post('/api', dataController.create, apiController.show)
+// Show
+router.get('api/:id', dataController.show, apiController.show)
+
 // Index
 router.get('/', dataController.index, viewController.index)
 // New

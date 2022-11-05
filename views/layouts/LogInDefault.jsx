@@ -1,8 +1,8 @@
 const React = require('react')
 
 class LogInDefault extends React.Component {
-  render () {
-    const { article, title } = this.props
+  render() {
+    const { title } = this.props
     return (
       <html>
         <head>
@@ -10,7 +10,7 @@ class LogInDefault extends React.Component {
           <title>{title}</title>
         </head>
         <body>
-            <div className='header'> 
+          <div className='header'>
             <img src='https://i.imgur.com/cEukfyg.png' />
             <img src='https://i.imgur.com/DI0c5aO.png' />
             <img src='https://i.imgur.com/6aiVqGM.png' />
@@ -20,10 +20,10 @@ class LogInDefault extends React.Component {
             <img src='https://i.imgur.com/E2kQrr2.png' />
             <img src='https://i.imgur.com/edjCjX3.png' />
             <div className='indexTitle'>TRAVEL BLOG</div>
-          </div> 
+          </div>
 
           <nav>
-           nav
+            nav
           </nav>
           <h1>
             {title}

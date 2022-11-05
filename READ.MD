@@ -42,5 +42,5 @@ Show Page:
 ### Future Improvements
 - Create comment setion that other users can leave
 - Links that redirect to booking sites
-- Styling improvemnts for login/signup and show route
+- Styling improvements for login/signup and show route
 

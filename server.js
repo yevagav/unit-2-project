@@ -8,7 +8,6 @@ const MongoStore = require('connect-mongo')
 const app = express()
 const PORT = process.env.PORT || 3000
 
-
 // connect to database
 const db = require('./models/db')
 db.once('open', () => {

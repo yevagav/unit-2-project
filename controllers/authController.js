@@ -10,9 +10,8 @@ const bcrypt = require('bcryptjs')
 /// //////////////////////////////////////
 const router = express.Router()
 
-
 // Routes
-router.get('/home', (req, res)=> {
+router.get('/home', (req, res) => {
   res.render('Home.jsx')
 })
 
@@ -40,7 +39,6 @@ router.post('/signup', async (req, res) => {
     })
 })
 
-
 // The login Routes (Get => form, post => submit form)
 router.get('/login', (req, res) => {
   res.render('user/LogIn.jsx')
@@ -57,7 +55,7 @@ router.post('/login', async (req, res) => {
         // compare password
         const result = await bcrypt.compare(password, user.password)
         if (result) {
-          //store some properties in the session object
+          // store some properties in the session object
           req.session.username = username
           req.session.loggedIn = true
           // redirect to fruits page if successful

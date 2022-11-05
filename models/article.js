@@ -6,7 +6,7 @@ const articleSchema = new mongoose.Schema({
   post: { type: String, required: true },
   image: { type: String, required: false }
 },
-{ timestamps: true }
+  { timestamps: true }
 )
 
 // make a model from the schema

@@ -1,7 +1,7 @@
 const Article = require('../models/article')
 
 const dataController = {
-  index (req, res, next) {
+  index(req, res, next) {
     Article.find({}, (err, foundArticles) => {
       if (err) {
         res.status(400).send({
@@ -14,7 +14,7 @@ const dataController = {
     })
   },
   // Destroy
-  destroy (req, res, next) {
+  destroy(req, res, next) {
     Article.findByIdAndDelete(req.params.id, (err, deletedArticle) => {
       if (err) {
         res.status(400).send({
@@ -27,7 +27,7 @@ const dataController = {
     })
   },
   // Update
-  update (req, res, next) {
+  update(req, res, next) {
     Article.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedArticle) => {
       if (err) {
         res.status(400).send({
@@ -40,7 +40,7 @@ const dataController = {
     })
   },
   // Create
-  create (req, res, next) {
+  create(req, res, next) {
     Article.create(req.body, (err, createdArticle) => {
       if (err) {
         res.status(400).send({
@@ -53,7 +53,7 @@ const dataController = {
     })
   },
   // Show
-  show (req, res, next) {
+  show(req, res, next) {
     Article.findById(req.params.id, (err, foundArticle) => {
       if (err) {
         res.status(404).send({
