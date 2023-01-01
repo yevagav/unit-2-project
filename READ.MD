@@ -1,5 +1,5 @@
 # Project 2: Travel Blog
- A CRUD app that is created for a user to be able to upload posts about past travels.
+ A CRUD app that is created for a user to be able to upload posts about past travels
 
  # Technologies Used
 JavaScript, HTML, CSS, Node.js, JSX, Express, Mongo.DB, mongoose
